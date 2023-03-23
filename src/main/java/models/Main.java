@@ -16,9 +16,10 @@ public class Main {
 
 
  */
-       User user = new User();
-       user.setName("John");
-       user.setLastName("Silver");
+//       User user = new User();
+//       user.setName("John");
+//       user.setLastName("Silver");
+
 //       new User("John","Silver","john@mail.com", "$Abcd1234");
 
         User user1 = new User().withName("Jack").withLastName("Sparrow");
@@ -87,14 +88,16 @@ LustInFirstOut
                                                  double engine ? 8 bytes
                                                  }
 
-                            new User();
+                            new User();//объект построен дефолтным конструктором
+                            и он не передает никаких значений
         <--------------------X------------------ address {
                                                  name = null
                                                  lastName = null
                                                  email = null
                                                  password = null
                                                  }
-                            new User(name, lastName, email, password);
+                            new User(name, lastName, email, password);//объект построен кастомным конструктором
+                            поля инациализированы в параметрах конструктора
         <--------------------X------------------ address {
                                                  name = John
                                                  lastName = Silver

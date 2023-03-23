@@ -1,5 +1,6 @@
 package manager;
 
+import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,32 +11,39 @@ public class HelperUser extends HelperBase{
     public HelperUser(WebDriver wd) {
         super(wd);
     }
-
-    public void fillLoginForm(String email, String password){
-        type(By.id("email"), email);
-        type(By.id("password"), password);
-    }
-    public void fillRegistrationForm(String name, String lastName, String email, String password){
-        type(By.id("name"), name);
-        type(By.id("lastName"), lastName);
-        type(By.id("email"), email);
-        type(By.id("password"), password);
-    }
-
-    public void submitForm(){
-        wd.findElement(By.cssSelector("[type='submit']")).submit();
-    }
-
-    public void clickCheckbox(){
-        
-    }
-
     public void openLoginForm() {
         click(By.xpath("//a[.=' Log in ']"));
     }
     public void openRegistrationForm() {
         click(By.xpath("//a[.=' Sign up ']"));
     }
+//    public void fillLoginForm(String email, String password){
+//        type(By.id("email"), email);
+//        type(By.id("password"), password);
+//    }
+    public void fillLoginForm(User data){//overloading
+        type(By.id("email"), data.getEmail());
+        type(By.id("password"), data.getPassword());
+    }
+//    public void fillRegistrationForm(String name, String lastName, String email, String password){
+//        type(By.id("name"), name);
+//        type(By.id("lastName"), lastName);
+//        type(By.id("email"), email);
+//        type(By.id("password"), password);
+//    }
+    public void fillRegistrationForm(User user){
+        type(By.id("name"), user.getName());
+        type(By.id("lastName"), user.getName());
+        type(By.id("email"), user.getEmail());
+        type(By.id("password"), user.getPassword());
+    }
+    public void submitForm(){
+        wd.findElement(By.cssSelector("[type='submit']")).submit();
+    }
+
+//    public void clickCheckbox(){}
+
+
 
     public void logout(){
         click(By.xpath("//a[.=' Logout ']"));
@@ -44,11 +52,11 @@ public class HelperUser extends HelperBase{
         return isElementPresent(By.xpath("//a[.=' Logout ']"));
     }
 
-    public boolean isLoggedSuccess() {
-        WebDriverWait wait = new WebDriverWait(wd, 10);
-        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath("//h2[.='Logged in success']"))));
-        return wd.findElement(By.xpath("//h2[.='Logged in success']")).getText().contains("success");
-    }
+//    public boolean isLoggedSuccess() {
+//        WebDriverWait wait = new WebDriverWait(wd, 10);
+//        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath("//h2[.='Logged in success']"))));
+//        return wd.findElement(By.xpath("//h2[.='Logged in success']")).getText().contains("success");
+//    }
 
     public boolean isLoggedFailed() {
         WebDriverWait wait = new WebDriverWait(wd, 10);
@@ -56,11 +64,21 @@ public class HelperUser extends HelperBase{
         return wd.findElement(By.xpath("//div[.=\"It'snot look like email\"]")).getText().contains("like email");
     }
 
-
-
     public void clickOkButton(){
         if (isElementPresent(By.xpath("//button[.='Ok']"))){
             click(By.xpath("//button[.='Ok']"));
         }
     }
+
+    public void checkboxLabel(){
+        click(By.xpath("//label[@class = 'checkbox-label terms-label']"));
+    }
+    public void buttonYalla(){
+        click(By.xpath("//button[@type='submit']"));
+    }
+
+//    public void submitButtonYalla() {
+//        click(By.xpath("//button[@type='submit']"));
+//    }
+
 }
