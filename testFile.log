@@ -1,0 +1,5 @@
+20411 [Test worker] INFO  tests.TestBase -%PARSER_ERROR[kvp]- regPositiveTest starts with:test1759@mail.ru&Qwer1234$
+19:33:12.003 INFO  tests.TestBase regPositiveTest starts with:test1991@mail.ru&Qwer1234$
+19:53:19.143 INFO   tests.TestBase  regPositiveTest starts with:test3199@mail.ru & Qwer1234$
+19:55:01.033 INFO   tests.TestBase  regPositiveTest starts with:test3301@mail.ru & Qwer1234$
+19:56:03.369 INFO   tests.TestBase  regPositiveTest starts with:test3363@mail.ru & Qwer1234$

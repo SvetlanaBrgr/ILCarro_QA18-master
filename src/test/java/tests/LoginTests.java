@@ -4,15 +4,17 @@ import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase{
-@BeforeMethod
-        public void preCondition(){
-    if(app.getUser().isLogged()){
-        app.getUser().logout();
-    }
-}
+
+//@BeforeMethod
+//        public void preCondition(){
+//    if(app.getUser().isLogged()){
+//        app.getUser().logout();
+//    }
+//}
     @Test
     public void loginPositiveTest(){
         int i = (int)(System.currentTimeMillis() / 1000) % 3600;
@@ -21,10 +23,12 @@ public class LoginTests extends TestBase{
                 .email("test"+i+"@mail.ru")
                 .password("Qwer1234$")
                                 .build();
+        logger.info("regPositiveTest starts with:" + data.getEmail() + " & " + data.getPassword());
         app.getUser().openLoginForm();
 //        app.getUser().fillLoginForm("asd@fgh.com", "$Asdf1234");
         app.getUser().fillLoginForm(data);
         app.getUser().submitForm();
+        app.getUser().clickOkButton();
 //        Assert.assertTrue(app.getUser().isLoggedSuccess());//не находит элемент в методе.isLoggedSuccess()
     }
 
@@ -37,6 +41,7 @@ public class LoginTests extends TestBase{
                 .build();
         app.getUser().openLoginForm();
         app.getUser().fillLoginForm(data);
+
 
     }
     @Test
