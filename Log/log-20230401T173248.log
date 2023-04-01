@@ -1,0 +1,44 @@
+17:32:57.282 INFO   tests.TestBase    ### Start testloginPositiveTest
+17:32:57.298 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logout']
+17:33:07.390 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.='Logout']is found successfully
+17:33:07.395 INFO   tests.TestBase  regPositiveTest starts with:test1987@mail.ru & Qwer1234$
+17:33:07.395 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.=' Log in ']
+17:33:07.425 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.=' Log in ']is found successfully
+17:33:07.585 INFO   manager.MyListener  Start searching element byBy.id: email
+17:33:07.612 INFO   manager.MyListener  The element with locator byBy.id: emailis found successfully
+17:33:08.034 INFO   manager.MyListener  Start searching element byBy.id: password
+17:33:08.070 INFO   manager.MyListener  The element with locator byBy.id: passwordis found successfully
+17:33:08.359 INFO   manager.MyListener  Start searching element byBy.cssSelector: [type='submit']
+17:33:08.433 INFO   manager.MyListener  The element with locator byBy.cssSelector: [type='submit']is found successfully
+17:33:08.536 INFO   manager.MyListener  Start searching element byBy.xpath: //h2[.='Logged in success']
+17:33:16.233 INFO   manager.MyListener  Something went wrong!
+17:33:16.234 INFO   manager.MyListener  Cannot locate an element using xpath=//h2[.='Logged in success']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+17:33:16.236 INFO   manager.MyListener  org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//h2[.='Logged in success']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: driver.version: EventFiringWebDriver
+17:33:16.302 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+17:33:16.359 INFO   manager.MyListener  Something went wrong!
+17:33:16.360 INFO   manager.MyListener  no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9093305bf3c7fc62aef57c52c9827022
+*** Element info: {Using=xpath, value=//button[.='Ok']}
+17:33:16.370 INFO   manager.MyListener  org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9093305bf3c7fc62aef57c52c9827022
+*** Element info: {Using=xpath, value=//button[.='Ok']}

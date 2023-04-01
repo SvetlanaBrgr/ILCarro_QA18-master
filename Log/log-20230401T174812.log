@@ -1,0 +1,30 @@
+17:48:22.370 INFO   tests.TestBase    ### Start testloginPositiveTest
+17:48:22.381 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logout']
+17:48:32.456 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.='Logout']is found successfully
+17:48:32.469 INFO   tests.TestBase  loginPositiveTest starts with:test2912@mail.ru & Qwer1234$
+17:48:32.470 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.=' Log in ']
+17:48:32.497 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.=' Log in ']is found successfully
+17:48:32.658 INFO   manager.MyListener  Start searching element byBy.id: emai
+17:48:42.711 INFO   manager.MyListener  Something went wrong!
+17:48:42.712 INFO   manager.MyListener  no such element: Unable to locate element: {"method":"css selector","selector":"#emai"}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64655}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a4abd7141cfa02eb24cddf2311a8383
+*** Element info: {Using=id, value=emai}
+17:48:42.712 INFO   manager.MyListener  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#emai"}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64655}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a4abd7141cfa02eb24cddf2311a8383
+*** Element info: {Using=id, value=emai}
+17:48:43.185 INFO   manager.MyListener  Here is the link to screenshot with error:src/test/screenShots/screen - 2922.png
+17:48:43.191 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+17:48:53.232 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+17:48:53.234 INFO   tests.TestBase     ### Finished ###

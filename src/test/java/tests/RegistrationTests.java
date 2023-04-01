@@ -28,10 +28,11 @@ public class RegistrationTests extends TestBase {
             app.getUser().openRegistrationForm();
 //      app.getUser().fillRegistrationForm(name, lastName,email,password);
             app.getUser().fillRegistrationForm(user);
-            app.getUser().checkboxLabel();// 3 варианта метода в HelperUser
+            app.getUser().clickcheckbox();// 3 варианта метода в HelperUser
             app.getUser().buttonYalla();
 //        app.getUser().submitButtonYalla(); // не находит элемент
 //        Assert.assertTrue(app.getUser().isLogged());
+            logger.info("registrationPositiveTest completed");
             Assert.assertTrue(app.getUser().isLoggedSuccess());
 
 //        User user = new User()
@@ -56,7 +57,7 @@ public class RegistrationTests extends TestBase {
 
             app.getUser().openRegistrationForm();
             app.getUser().fillRegistrationForm(user);
-            app.getUser().checkboxLabel();// 3 варианта метода в HelperUser
+            app.getUser().clickcheckbox();// 3 варианта метода в HelperUser
             app.getUser().buttonYalla();
             //        app.getUser().submitButtonYalla(); // не находит элемент
         }
@@ -71,7 +72,7 @@ public class RegistrationTests extends TestBase {
 
             app.getUser().openRegistrationForm();
             app.getUser().fillRegistrationForm(user);
-            app.getUser().checkboxLabel();// 3 варианта метода в HelperUser
+            app.getUser().clickcheckbox();// 3 варианта метода в HelperUser
             app.getUser().buttonYalla();
 //        app.getUser().submitButtonYalla(); // не находит элемент
         }

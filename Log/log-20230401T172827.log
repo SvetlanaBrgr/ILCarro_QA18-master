@@ -1,0 +1,16 @@
+17:28:38.778 INFO   tests.TestBase    ### Start testloginNegativeTestWrongEmail
+17:28:38.786 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logout']
+17:28:48.874 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.='Logout']is found successfully
+17:28:48.878 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.=' Log in ']
+17:28:48.905 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.=' Log in ']is found successfully
+17:28:49.066 INFO   manager.MyListener  Start searching element byBy.id: email
+17:28:49.104 INFO   manager.MyListener  The element with locator byBy.id: emailis found successfully
+17:28:49.489 INFO   manager.MyListener  Start searching element byBy.id: password
+17:28:49.530 INFO   manager.MyListener  The element with locator byBy.id: passwordis found successfully
+17:28:49.890 INFO   manager.MyListener  Start searching element byBy.xpath: //div[.="It'snot look like email"]
+17:28:49.940 INFO   manager.MyListener  The element with locator byBy.xpath: //div[.="It'snot look like email"]is found successfully
+17:28:50.031 INFO   manager.MyListener  Start searching element byBy.xpath: //div[.="It'snot look like email"]
+17:28:50.051 INFO   manager.MyListener  The element with locator byBy.xpath: //div[.="It'snot look like email"]is found successfully
+17:28:50.087 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+17:29:00.170 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+17:29:00.171 INFO   tests.TestBase     ### Finished ###

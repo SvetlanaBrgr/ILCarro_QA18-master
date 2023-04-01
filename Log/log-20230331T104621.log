@@ -1,0 +1,59 @@
+10:46:33.929 INFO   tests.TestBase    ### Start testloginNegativeTestWrongEmail
+10:46:33.939 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logged in']
+10:46:44.012 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.='Logged in']is found successfully
+10:46:44.019 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.=' Log in ']
+10:46:44.059 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.=' Log in ']is found successfully
+10:46:44.533 INFO   manager.MyListener  Start searching element byBy.id: email
+10:46:44.627 INFO   manager.MyListener  The element with locator byBy.id: emailis found successfully
+10:46:45.457 INFO   manager.MyListener  Start searching element byBy.id: password
+10:46:45.496 INFO   manager.MyListener  The element with locator byBy.id: passwordis found successfully
+10:46:46.176 INFO   manager.MyListener  Start searching element byBy.xpath: //div[.="It'snot look like email"]
+10:46:46.234 INFO   manager.MyListener  The element with locator byBy.xpath: //div[.="It'snot look like email"]is found successfully
+10:46:46.369 INFO   manager.MyListener  Start searching element byBy.xpath: //div[.="It'snot look like email"]
+10:46:46.392 INFO   manager.MyListener  The element with locator byBy.xpath: //div[.="It'snot look like email"]is found successfully
+10:46:46.471 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:46:56.528 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+10:46:56.531 INFO   tests.TestBase     ### Finished ###
+10:46:56.541 INFO   tests.TestBase    ### Start testloginNegativeTestWrongPassword
+10:46:56.544 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logged in']
+10:47:05.097 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.='Logged in']is found successfully
+10:47:05.098 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.=' Log in ']
+10:47:09.273 INFO   manager.MyListener  Something went wrong!
+10:47:09.274 INFO   manager.MyListener  no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52344}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d98b1b45d2acfa2b172e5fe50f76739c
+*** Element info: {Using=xpath, value=//a[.=' Log in ']}
+10:47:09.275 INFO   manager.MyListener  org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52344}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d98b1b45d2acfa2b172e5fe50f76739c
+*** Element info: {Using=xpath, value=//a[.=' Log in ']}
+10:47:09.277 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:47:09.293 INFO   manager.MyListener  Something went wrong!
+10:47:09.293 INFO   manager.MyListener  no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52344}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d98b1b45d2acfa2b172e5fe50f76739c
+*** Element info: {Using=xpath, value=//button[.='Ok']}
+10:47:09.293 INFO   manager.MyListener  org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52344}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d98b1b45d2acfa2b172e5fe50f76739c
+*** Element info: {Using=xpath, value=//button[.='Ok']}

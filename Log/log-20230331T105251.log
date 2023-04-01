@@ -1,0 +1,37 @@
+10:52:58.918 INFO   tests.TestBase    ### Start testloginPositiveTest
+10:52:58.926 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logged in']
+10:53:08.964 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.='Logged in']is found successfully
+10:53:08.970 INFO   tests.TestBase  regPositiveTest starts with:test3188@mail.ru & Qwer1234$
+10:53:08.970 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.=' Log in ']
+10:53:09.001 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.=' Log in ']is found successfully
+10:53:09.177 INFO   manager.MyListener  Start searching element byBy.id: email
+10:53:09.220 INFO   manager.MyListener  The element with locator byBy.id: emailis found successfully
+10:53:09.630 INFO   manager.MyListener  Start searching element byBy.id: password
+10:53:09.669 INFO   manager.MyListener  The element with locator byBy.id: passwordis found successfully
+10:53:09.999 INFO   manager.MyListener  Start searching element byBy.cssSelector: [type='submit']
+10:53:10.056 INFO   manager.MyListener  The element with locator byBy.cssSelector: [type='submit']is found successfully
+10:53:10.114 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:53:11.355 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+10:53:11.355 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:53:11.393 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+10:53:11.490 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:53:11.512 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+10:53:11.513 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:53:11.541 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+10:53:11.633 INFO   manager.MyListener  Something went wrong!
+10:53:11.635 INFO   manager.MyListener  stale element reference: element is not attached to the page document
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53105}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 778a05581f6e9236e6bfd2557be11895
+10:53:11.635 INFO   manager.MyListener  org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53105}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 778a05581f6e9236e6bfd2557be11895

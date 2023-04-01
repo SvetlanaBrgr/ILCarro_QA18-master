@@ -1,0 +1,17 @@
+10:55:40.327 INFO   tests.TestBase    ### Start testloginPositiveTest
+10:55:40.335 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logged in']
+10:55:50.415 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.='Logged in']is found successfully
+10:55:50.420 INFO   tests.TestBase  regPositiveTest starts with:test3350@mail.ru & Qwer1234$
+10:55:50.420 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.=' Log in ']
+10:55:50.453 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.=' Log in ']is found successfully
+10:55:50.617 INFO   manager.MyListener  Start searching element byBy.id: email
+10:55:50.655 INFO   manager.MyListener  The element with locator byBy.id: emailis found successfully
+10:55:51.145 INFO   manager.MyListener  Start searching element byBy.id: password
+10:55:51.188 INFO   manager.MyListener  The element with locator byBy.id: passwordis found successfully
+10:55:51.524 INFO   manager.MyListener  Start searching element byBy.cssSelector: [type='submit']
+10:55:51.570 INFO   manager.MyListener  The element with locator byBy.cssSelector: [type='submit']is found successfully
+10:55:51.627 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:55:52.787 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+10:55:52.787 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:55:52.828 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+10:55:52.916 INFO   tests.TestBase     ### Finished ###

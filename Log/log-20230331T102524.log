@@ -1,0 +1,30 @@
+10:25:33.400 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logged in']
+10:25:43.515 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.='Logged in']is found successfully
+10:25:43.521 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.=' Log in ']
+10:25:43.556 INFO   manager.MyListener  The element with locator byBy.xpath: //a[.=' Log in ']is found successfully
+10:25:43.713 INFO   manager.MyListener  Start searching element byBy.id: email
+10:25:43.745 INFO   manager.MyListener  The element with locator byBy.id: emailis found successfully
+10:25:44.129 INFO   manager.MyListener  Start searching element byBy.id: password
+10:25:44.171 INFO   manager.MyListener  The element with locator byBy.id: passwordis found successfully
+10:25:44.510 INFO   manager.MyListener  Start searching element byBy.xpath: //button[.='Ok']
+10:25:54.622 INFO   manager.MyListener  The element with locator byBy.xpath: //button[.='Ok']is found successfully
+10:25:54.633 INFO   manager.MyListener  Start searching element byBy.xpath: //a[.='Logged in']
+10:26:03.317 INFO   manager.MyListener  Something went wrong!
+10:26:03.318 INFO   manager.MyListener  disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a824d7a826645d8de3482e18994d0950
+*** Element info: {Using=xpath, value=//a[.='Logged in']}
+10:26:03.318 INFO   manager.MyListener  org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=110.0.5481.178)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2844N9K', ip: '10.0.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a824d7a826645d8de3482e18994d0950
+*** Element info: {Using=xpath, value=//a[.='Logged in']}
