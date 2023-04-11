@@ -25,7 +25,7 @@ public class HelperUser extends HelperBase{
     }
     public void fillLoginForm(User data){//overloading
 //        type(By.id("email"), data.getEmail());
-        type(By.id("emai"), data.getEmail());
+        type(By.id("email"), data.getEmail()); // !!! emai - error - чтобы проверить на ошибку поиска поля
         type(By.id("password"), data.getPassword());
     }
 //    public void fillRegistrationForm(String name, String lastName, String email, String password){

@@ -1,30 +1,32 @@
 package tests;
 
+import manager.NGListener;
+import manager.ProviderData;
 import models.User;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
+//@Listeners(NGListener.class)//подключение NGListener.class
 
 public class LoginTests extends TestBase{
 
-@BeforeMethod
-        public void preCondition(){
-    if(app.getUser().isLogged()){
-        app.getUser().logout();
-    }
+    @BeforeMethod
+    public void precondition(){
+        if(app.getUser().isLogged()){
+            app.getUser().logout();
+        }
 }
+    @Test(dataProvider = "loginModelDto", dataProviderClass = ProviderData.class)//cw_18
 
-    @Test
-    public void loginPositiveTest(){
-        int i = (int)(System.currentTimeMillis() / 1000) % 3600;
-//        User data = new User().withEmail("asd@fgh.com").withPassword("$Asdf1234");
-        User data = User.builder()
-                .email("test"+i+"@mail.ru")
-                .password("Qwer1234$")
-                                .build();
-        logger.info("loginPositiveTest starts with:" + data.getEmail() + " & " + data.getPassword());
+    public void loginPositiveTest(User data){
+//        int i = (int)(System.currentTimeMillis() / 1000) % 3600;
+//       User data = new User().withEmail("asd@fgh.com").withPassword("$Asdf1234");
+// закомментировали cw_18 -данные генерируются из класса ProviderData
+//        User data = User.builder()//закомментировали cw-18
+//                .email("test"+i+"@mail.ru")
+//                .password("Qwer1234$")
+//                                .build();
+//        logger.info("loginPositiveTest starts with:" + data.getEmail() + " & " + data.getPassword());
         app.getUser().openLoginForm();
 //        app.getUser().fillLoginForm("asd@fgh.com", "$Asdf1234");
         app.getUser().fillLoginForm(data);
@@ -34,7 +36,7 @@ public class LoginTests extends TestBase{
 
     }
 
-    @Test
+    @Test(dataProvider = "loginModelDto", dataProviderClass = ProviderData.class)//cw_18
     public void loginNegativeTestWrongEmail(){
 
         User data = User.builder()
