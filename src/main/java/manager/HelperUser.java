@@ -2,6 +2,7 @@ package manager;
 
 import models.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -76,19 +77,23 @@ public class HelperUser extends HelperBase{
     }
 
     public void clickcheckbox(){
-//      click(By.xpath("//label[@class = 'checkbox-label terms-label']"));// 1-й вариант
-//
+        // 1-й вариант мой
+//      click(By.xpath("//label[@class = 'checkbox-label terms-label']"));
+
+        // variant 1
+//        click(By.xpath("//label[@for='terms-of-use']"));
+
 //        //==== 2-й вариант через библиотеку Javascript
-//       JavascriptExecutor script = (JavascriptExecutor) wd;
-//        script.executeScript("document.querySelector('#terms-of-use').click()");
+       JavascriptExecutor script = (JavascriptExecutor) wd;//cw_19
+        script.executeScript("document.querySelector('#terms-of-use').click()");
 //        "document.querySelector('#terms-of-use').click()" запрос через консоль кода страницы
 
         //==== 3-й вариант
-        Rectangle rect = wd.findElement(By.xpath("//*[@class='checkbox-container']")).getRect();
-        int x = rect.getX() + 5;//размер пикселей +5
-        int y = rect.getY() + rect.getHeight()*1/2;//или так сдвиг на размер пикселей
-        Actions actions = new Actions(wd) ;
-                actions.moveByOffset(x,y).click().perform();
+//        Rectangle rect = wd.findElement(By.xpath("//*[@class='checkbox-container']")).getRect();
+//        int x = rect.getX() + 5;//размер пикселей +5
+//        int y = rect.getY() + rect.getHeight()*1/2;//или так сдвиг на размер пикселей
+//        Actions actions = new Actions(wd) ;
+//                actions.moveByOffset(x,y).click().perform();
     }
 
     public void buttonYalla(){

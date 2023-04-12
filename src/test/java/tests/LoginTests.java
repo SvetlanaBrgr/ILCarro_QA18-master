@@ -16,9 +16,24 @@ public class LoginTests extends TestBase{
             app.getUser().logout();
         }
 }
-    @Test(dataProvider = "loginModelDto", dataProviderClass = ProviderData.class)//cw_18
 
-    public void loginPositiveTest(User data){
+    @Test(invocationCount = 1, groups = {"smoke"},
+            dataProvider = "loginModelDto", dataProviderClass = ProviderData.class)//cw_19
+
+    public void loginPositiveTestConfig(){//cw_19 Config
+
+        app.getUser().openLoginForm();
+        app.getUser().fillLoginForm(app.getEmail(), app.getPassword());
+        app.getUser().submitForm();
+
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
+
+    }
+    @Test(invocationCount = 2, groups = {"smoke"})//cw_18 fail
+//            @Test (dataProvider = "loginModelDto", dataProviderClass = ProviderData.class)//cw_18 and cw_19 provider
+
+    public void loginPositiveTest(User data){//cw-19
+//        public void loginPositiveTest(){
 //        int i = (int)(System.currentTimeMillis() / 1000) % 3600;
 //       User data = new User().withEmail("asd@fgh.com").withPassword("$Asdf1234");
 // закомментировали cw_18 -данные генерируются из класса ProviderData
@@ -36,7 +51,8 @@ public class LoginTests extends TestBase{
 
     }
 
-    @Test(dataProvider = "loginModelDto", dataProviderClass = ProviderData.class)//cw_18
+    @Test(groups = {"smoke"})//cw_18
+//    @Test (dataProvider = "loginModelDto", dataProviderClass = ProviderData.class)//cw_19
     public void loginNegativeTestWrongEmail(){
 
         User data = User.builder()

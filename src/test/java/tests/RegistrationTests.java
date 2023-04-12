@@ -1,5 +1,6 @@
 package tests;
 
+import manager.ProviderData;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -13,6 +14,20 @@ public class RegistrationTests extends TestBase {
         if (app.getUser().isLogged()) {
             app.getUser().logout();
         }
+    }
+
+    @Test(dataProvider = "registrationCsv", dataProviderClass = ProviderData.class)
+
+    public void regPositiveTestCSV (User user) {
+        logger.info("regPositiveTest starts with:" + user.getEmail() + " & " + user.getPassword());
+
+        app.getUser().openRegistrationForm();
+        app.getUser().fillRegistrationForm(user);
+        app.getUser().clickcheckbox();// 3 варианта метода в HelperUser
+        app.getUser().buttonYalla();
+        logger.info("registrationPositiveTest completed");
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
+
     }
         @Test
         public void regPositiveTest () {
@@ -77,10 +92,10 @@ public class RegistrationTests extends TestBase {
 //        app.getUser().submitButtonYalla(); // не находит элемент
         }
 
-        @AfterMethod
-        public void postCondition () {
-            app.getUser().clickOkButton();
-        }
+//        @AfterMethod
+//        public void postCondition () {
+//            app.getUser().clickOkButton();
+//        }
     }
 
 
